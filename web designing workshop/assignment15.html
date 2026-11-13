@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 15</title>
+    <style>
+        .form-row { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <fieldset style="max-width: 500px;">
+        <legend>Personal Details</legend>
+        
+        <div class="form-row">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name">
+        </div>
+        
+        <div class="form-row">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+        </div>
+        
+        <div class="form-row">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password">
+        </div>
+        
+        <div class="form-row">
+            <label>Gender: </label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+        
+        <div class="form-row">
+            <label>Hobbies: </label>
+            <input type="checkbox" id="reading" name="hobbies" value="Reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="coding" name="hobbies" value="Coding">
+            <label for="coding">Coding</label>
+        </div>
+        
+        <div class="form-row">
+            <label for="dob">DOB: </label>
+            <!-- Using text as a fallback if the browser doesn't style date inputs exactly like the image, but type="date" is semantically correct -->
+            <input type="text" id="dob" name="dob"> 
+        </div>
+    </fieldset>
+</body>
+</html>
